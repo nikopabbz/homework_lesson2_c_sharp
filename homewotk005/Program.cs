@@ -6,7 +6,7 @@ int count = int.Parse(number);
 Random rnd = new Random();
 for (; ; )
 {
-    int number1 = rnd.Next();
+    int number1 = rnd.Next(1, 1000);
     System.Console.WriteLine(number1);
     if (number1 % count == 0)
     {
